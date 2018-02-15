@@ -17,7 +17,8 @@ function get_db() {
 
 		if (!isset($dbUrl) || empty($dbUrl)) {
 			// example localhost configuration URL with user: "ta_user", password: "ta_pass"
-			// and a database called "scripture_ta"
+			// and a database called "scripture_ta". NOTE: Postgres default port number is 
+			// sometimes set to 5433
 			$dbUrl = "postgres://note_user:orange@localhost:5432/notebook";
 
 			// NOTE: It is not great to put this sensitive information right
