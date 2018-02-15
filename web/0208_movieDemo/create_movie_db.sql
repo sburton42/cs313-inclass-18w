@@ -59,5 +59,5 @@ JOIN movieActor ma ON a.id = ma.actorId
 JOIN movie m ON ma.movieId = m.id
 WHERE a.name = 'Tom Cruise';
 
-
-
+CREATE USER movieapp WITH PASSWORD 'jeff';
+GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA public TO movieApp;
